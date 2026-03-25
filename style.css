@@ -1,0 +1,356 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* STYLING THE NAVIGATION */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  background-color: #bababb;
+  gap: 32px;
+  list-style-type: none;;
+  padding: 10px;
+}
+
+.nav-list a {
+  color: white;
+  background-color: #bababb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* CATALOGO MENU */
+.catalogo {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.catalogo-carousel {
+  display: flex;
+  overflow-x: scroll; /*This is to move to right*/
+  -webkit-overflow-scrolling: touch;
+}
+
+.catalogo-menu {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+
+.catalogo-menu img {
+  max-width: 100%;
+  height: auto;
+}
+
+.catalogo-menu p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.catalogo-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalogo-menu a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.catalogo-section {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #4f9ad4;
+  box-sizing: border-box;
+}
+
+.slogan-text {
+  text-align: center;
+}
+
+.slogan h2 {
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.promo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*THIS IS DELIVERY CARD STYLING*/
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.card-delivery {
+  flex: 0 0 25%; /*This means every icon will be 25% of the screen*/
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center; 
+}
+
+.card-delivery img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.card-heading {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #121212;
+}
+
+.card-text {
+  font-size:  1rem;
+}
+
+/* SPECIAL OCCASION ADV */
+.specialocassion {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  box-sizing: border-box;
+  padding-bottom: 80px;
+}
+
+.info-special {
+  background: white; 
+  max-width: 600px; 
+  width: 100%;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.info-special img {
+  width: 100%; 
+  height: auto; 
+  max-width: 400px; 
+}
+
+.info-pane-text {
+  text-align: center; 
+}
+
+.info-special-text h3 {
+  flex: 1;
+}
+
+.info-special-text p {
+  flex: 1;
+}
+
+.button {
+  background-color: #4f9ad4;
+  color: white;
+  display: block;
+  font-weight: bold;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+/* FOOTER SYTLISH */
+.page-content {
+  flex: 1;
+}
+
+.page-footer {
+  background-color: #4f9ad4;
+  margin-top: 40px;
+}
+
+.footer-content {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.footer-content p {
+  color: black;
+  margin: 2rem 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-links a {
+  color: #edd2af;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  list-style: none;
+}
+
+.footer-contact a {
+  color: #edd2af;
+}
+/* FINISH STYLISH FOOTER*/
+
+/*ERROR PAGE*/
+.error-box {
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.error-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.error-message {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.back-button {
+  background-color: #707070;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.back-button:hover {
+  background-color: #121212;
+}
+
+
+/*DESKTOP AND UP*/
+@media only screen and (min-width: 1001px) {
+  .catalogo-carousel {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .catalogo-menu {
+    flex: 0 0 16.66%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .catalogo-section {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .slogan h2 {
+    flex-direction: row;
+    font-size: 30px;
+    box-sizing: border-box;
+  }
+
+  /*THIS IS DELIVERY CARD STYLING*/
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+
+.card-delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+.card-delivery img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.card-heading {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  color: #121212;
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  color: #121212;
+}
+  
+.specialocassion {
+  flex-direction: row;
+  padding-top: 1rem;
+}
+
+.info-special {
+    max-width: 90%;
+    flex-direction: row;
+}
+
+.info-special img {
+  padding-right: 2rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: left;
+  list-style: none;
+}
+}

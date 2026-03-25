@@ -1,0 +1,181 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  }
+  
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* STYLING THE NAVIGATION */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  background-color: #bababb;
+  gap: 32px;
+  list-style-type: none;;
+  padding: 10px;
+}
+
+.nav-list a {
+  color: white;
+  background-color: #bababb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Stylish of Page content */
+.page-wrapper {
+  padding: 20px;
+}
+
+.page-wrapper p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.text-pane {
+  max-width: 600px; 
+}
+
+.section.card-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-contact {
+  background-color: #accbe3;
+  padding-right: 20px;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+.contact-list img {
+  width: 30pxpx; 
+  height: 30px; 
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.contact-list h3 {
+  margin: 0; 
+}
+
+.contact-list p {
+  margin: 0; 
+  padding-left: 50px;
+}
+
+.contact-list + .contact-list {
+  margin-top: 20px; /
+}
+
+/* Stylish Form */
+.form-input {
+  background-color: white;
+  border: 3px solid black;
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  outline: 0;
+  width: 100%;
+  }
+  
+.form-input:hover, .form-input:focus {
+  border: 3px solid #4f9ad4;
+  }
+
+.form-textarea {
+  height: 150px;
+}
+  
+.submit-button {
+  width: 100%;
+  }
+
+.button {
+  background-color: black;
+  color: white;
+  display: block;
+  font-weight: bold;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #4f9ad4;
+}
+
+
+/* FOOTER SYTLISH */  
+.page-footer {
+  background-color: #4f9ad4;
+  margin-top: 80px;
+}
+
+.footer-content {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.footer-content p {
+  color: black;
+  margin: 2rem 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-links a {
+  color: #edd2af;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  list-style: none;
+}
+
+.footer-contact a {
+  color: #edd2af;
+}
+/* FINISH STYLISH FOOTER*/
+
+@media only screen and (min-width: 1001px) {
+
+  .page-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: left;
+    list-style: none;
+  }
+}
